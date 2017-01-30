@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="theme-color" content="#5d4037" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Sweet Heart</title>
+  
+<!--Favicon-->
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="brown" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">  <img class="responsive-img" width ="140" height="auto" src="banner.png"></a>
+      <ul class="right hide-on-med-and-down">
+          <li><a href="packages.html">Packages</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="book.html">Book A Party</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+          <li><a href="packages.html">Packages</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="book.html">Book A Party</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+<br>
+<div class="container">
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+<i class="material-icons prefix">account_circle</i>
+          <input placeholder="E.g. Joe" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="E.g. Smith" id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+            <div class="row">
+        <div class="input-field col s12">
+<i class="material-icons prefix">lock</i>
+          <input id="password" type="password" class="validate">
+          <label for="password">SSN</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+<i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate">
+          <label for="email"data-error="Please Enter a Valid Email." data-success="">Email</label>
+        </div>
+      </div>
+<div class ="row">
+ <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone"data-error="Please Enter a Valid Phone Number" data-success="">Telephone</label>
+        </div>
+<div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Special Requests</label>
+        </div>
+</div>
+<div class ="row">
+<div class="input-field col s6">
+<label for="start" class="active">Reservation Date</label>
+<input type="date" class="datepicker" id="dates">
+</div>
+    <div class="input-field col s3">
+        <button class="btn waves-effect waves-light teal" type="reset" name="action" onclick="aaa()">Check Availability
+        </button>
+        <script>
+            function aaa() {
+                if(Math.round(Math.random())===1) {
+                    document.getElementById("ava").innerHTML = "<p style=\"color:green\">This day is available.</p>";
+                }else {
+                    document.getElementById("ava").innerHTML = "<p style=\"color:red\">This day is not available.</p>";
+                }
+
+            }
+        </script>
+    </div>
+    <div class="input-field col s3">
+        <p id="ava"></p>
+    </div>
+</div>
+        <div class="row">
+            <div class="input-field col s6">
+                <p>Number of Children</p>
+    <form action="#">
+        <p class="range-field">
+            <input type="range" id="test15" min="0" max="25" />
+        </p>
+    </form>
+                </div>
+            <div class="input-field col s6">
+                <p>Number of Adults</p>
+                <form action="#">
+                    <p class="range-field">
+                        <input type="range" id="test51" min="1" max="25" />
+                    </p>
+                </form>
+            </div>
+    </div>
+
+    </form>
+  <div class="row">
+<div class="input-field col s6">
+<form action="#">
+	<p>Package Type</p>
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Black Licorice (+ $0)</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">Toffee (+ $15)</label>
+    </p>
+ <p>
+      <input name="group1" type="radio" id="test3" />
+      <label for="test3">Holy Fudge (+ $30)</label>
+    </p>
+</form>
+</div>
+<div class="input-field col s6">
+<form action="#">
+<p>Optional Add-Ons</p>
+    <p>
+      <input type="checkbox" id="test5" />
+      <label for="test5">Unlimited Snack Bar Access (+ $5 Per Person)</label>
+    </p>
+<p>
+      <input type="checkbox" id="test6" />
+      <label for="test6">WiFi Access (+ $5)</label>
+    </p>
+
+<p>
+      <input type="checkbox" id="test7" />
+      <label for="test7">Birthday Special (+ $50)</label>
+    </p>
+
+</form>
+</div>
+</div>
+    <script>
+        function g() {
+            tot = 0;
+            var x = document.getElementById("test15").value;
+            var y = document.getElementById("test51").value;
+            var a = document.getElementById("test1").checked;
+            var b = document.getElementById("test2").checked;
+            var c = document.getElementById("test3").checked;
+            var d = document.getElementById("test5").checked;
+            var e = document.getElementById("test6").checked;
+            var f = document.getElementById("test7").checked;
+            var tot = (x*25)+(y*35);
+            if(a){
+
+            }else if(b){
+                tot=tot+15;
+            }else if(c){
+                tot=tot+30;
+            }
+            if(d){
+                var q = x*1+y*1;
+                tot=tot+5*q
+                console.log(q)
+            }
+            if(e){
+                tot=tot+5
+            }
+            if(f){
+                tot=tot+50
+            }
+            document.getElementById("totally").innerHTML ="Total - $"+tot;
+        }
+    </script>
+<br>
+    <button class="btn waves-effect waves-light brown" type="submit" name="action" onclick="g()">Refresh Total
+        <i class="material-icons right">refresh</i>
+    </button>
+    <br>
+    <h2 id="totally">Total - $780</h2>
+    <br>
+ <button class="btn waves-effect waves-light brown" type="submit" name="action" onclick="submitPressed()">Submit Your Reservation
+    <i class="material-icons right">send</i>
+  </button>
+</div>
+
+</div>
+<br>
+
+<script>
+function submitPressed(){
+alert("Judges: This Form Doesn't Save Your Data.");
+window.location.reload();
+}
+</script>
+
+
+
+
+<footer class="page-footer brown darken-2">
+    <div class="container">
+      <div class="row">
+          <h5 class="white-text">Follow Us</h5>
+          <a class="waves-effect waves-light" href="https://www.facebook.com/profile.php?id=100004323580680"><img class="responsive-img" src="images/facebook.png"></a>
+          <a class="waves-effect waves-light" href="https://twitter.com/_pwayfbla"><img class="responsive-img" src="images/twitter.png"></a>
+          <a class="waves-effect waves-light" href="https://plus.google.com/109461921179508475602"><img class="responsive-img" src="images/googleplus.png"></a>
+</div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Piscataway High School - Future Business Leaders of America
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
+  </script>
+
+  <script src="js/jquery.timeago.min.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="jade/lunr.min.js"></script>
+  <script src="jade/search.js"></script>
+  <script src="bin/materialize.js"></script>
+
+  </body>
+</html>
+

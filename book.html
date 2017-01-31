@@ -93,21 +93,15 @@
 <div class ="row">
 <div class="input-field col s6">
 <label for="start" class="active">Reservation Date</label>
-<input type="date" class="datepicker">
-	<script>
-    window.picker = $('.datepicker').pickadate({
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 2, // Creates a dropdown of 2 years to control year
-        format: 'dd/mm/yyyy'    
-    });
-	</script>
+<input type="date" class="datepicker" name="dat">
+
 </div>
     <div class="input-field col s3">
         <button class="btn waves-effect waves-light teal" type="button" name="action" onclick="aaa()">Check Availability
         </button>
         <script>
             function aaa() {
-		    console.log(picker.get)
+		
                 if(Math.round(Math.random())===1) {
                     document.getElementById("ava").innerHTML = "<p style=\"color:green\">This day is available.</p>";
                 }else {

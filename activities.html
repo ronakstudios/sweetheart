@@ -62,14 +62,6 @@
   $( document ).ready(function(){
     $('.carousel-slider').slider({full_width: true});//slider init
   });
-  
-  
-        var options = [
-    {selector: '.class', offset: 200, callback: customCallbackFunc } },
-    {selector: '.other-class', offset: 200, callback: function() {
-      customCallbackFunc();
-    } },
-  ];
 </script>
 
 <div class="container">
@@ -81,14 +73,16 @@
 </div>
   </div>
 
-  <script>
-  Materialize.scrollFire(options);
-    
-       var options = [
-      {selector: '#staggered-test', offset: 0{
-        Materialize.showStaggeredList('#staggered-test');
-      } },
-    ];
+<script>
+  function sho{
+    if(!isHidden(documentElementById("staggered-test"))){
+    Materialize.showStaggeredList('#staggered-test');
+    }
+  }
+  function isHidden(el) {
+    return (el.offsetParent === null)
+}
+  var ss=setInterval(sho,500);
   </script>
   <div class="container">
   <div class="card-panel">

@@ -24,6 +24,23 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
+</script>
+
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="jade/lunr.min.js"></script>
+<script src="jade/search.js"></script>
+<script src="bin/materialize.js"></script>
+<script>
+    Materialize.showStaggeredList('#staggered-test')
+</script>
+
 <body>
 <nav class="brown" role="navigation">
   <div class="nav-wrapper container">
@@ -43,10 +60,9 @@
 </nav>
 
 
-
-
 <div class="container">
-
+  <ul id="staggered-test">
+    <li style="opacity: 0">
     <div class="col s12 m7">
       <div class="card horizontal hoverable">
         <div class="card-image">
@@ -61,11 +77,8 @@
         </div>
       </div>
     </div>
-
-</div>
-
-<div class="container">
-
+    </li>
+    <li style="opacity: 0">
   <div class="col s12 m7">
     <div class="card horizontal hoverable">
       <div class="card-image">
@@ -80,11 +93,8 @@
       </div>
     </div>
   </div>
-
-</div>
-
-<div class="container">
-
+</li>
+    <li style="opacity: 0">
   <div class="col s12 m7">
     <div class="card horizontal hoverable">
       <div class="card-image">
@@ -99,7 +109,8 @@
       </div>
     </div>
   </div>
-
+</li>
+    </ul>
 </div>
 
 
@@ -122,19 +133,11 @@
 
 
 
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
+
+<script>
+    Materialize.showStaggeredList('#staggered-test')
 </script>
 
-<script src="js/jquery.timeago.min.js"></script>
-<script src="js/prism.js"></script>
-<script src="jade/lunr.min.js"></script>
-<script src="jade/search.js"></script>
-<script src="bin/materialize.js"></script>
 
 </body>
 </html>

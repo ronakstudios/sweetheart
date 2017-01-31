@@ -93,7 +93,7 @@
 <div class ="row">
 <div class="input-field col s6">
 <label for="start" class="active">Reservation Date</label>
-<input type="date" class="datepicker" name="dat">
+<input type="date" class="datepicker" id="dat">
 
 </div>
     <div class="input-field col s3">
@@ -101,10 +101,12 @@
         </button>
         <script>
             function aaa() {
-		
-                if(Math.round(Math.random())===1) {
+		var l = document.getElementById("dat").value;
+                if(l===null) {
+			document.getElementById("ava").innerHTML = "<p style=\"color:grey\">Please enter a reservation date.</p>";
+		}else if(l.substring(0,2).parseInt()%2===0){
                     document.getElementById("ava").innerHTML = "<p style=\"color:green\">This day is available.</p>";
-                }else {
+                }else{
                     document.getElementById("ava").innerHTML = "<p style=\"color:red\">This day is not available.</p>";
                 }
 
@@ -260,6 +262,7 @@ window.location.reload();
 	           document.getElementById("test15").value=0;
            document.getElementById("test51").value=1;
 	var t=setInterval(g,500);
+	var nn=setInterval(aaa,500);
 	</script>
   <script src="js/jquery.timeago.min.js"></script>
   <script src="js/prism.js"></script>

@@ -19,6 +19,10 @@
 <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	
     <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -226,8 +230,16 @@
 
 <script>
 function submitPressed(){
-alert("Judges: This Form Doesn't Save Your Data.");
-window.location.reload();
+var notification = document.querySelector('.mdl-js-snackbar');
+notification.MaterialSnackbar.showSnackbar(
+  {
+    message: 'Thank You For Your Submission'
+  }
+);
+setTimeout(function(){
+    window.location.reload();
+}, 3000);
+
 }
 </script>
 

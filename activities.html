@@ -73,7 +73,24 @@
 </div>
   </div>
 
-  
+  <script>
+      var options = [
+    {selector: '.class', offset: 200, callback: customCallbackFunc } },
+    {selector: '.other-class', offset: 200, callback: function() {
+      customCallbackFunc();
+    } },
+  ];
+  Materialize.scrollFire(options);
+    
+       var options = [
+      {selector: '#staggered-test', offset: 400, callback: function(el) {
+        Materialize.showStaggeredList('#staggered-test');
+      } },
+    ];
+    function el{
+      Materialize.showStaggeredList('#staggered-test');
+    }
+  </script>
   <div class="container">
   <div class="card-panel">
     <center><h3>Activities</h3></center>

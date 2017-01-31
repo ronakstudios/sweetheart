@@ -95,10 +95,11 @@
 <label for="start" class="active">Reservation Date</label>
 <input type="date" class="datepicker">
 	<script>
-		var $input = $('.datepicker').pickadate()
-
-// Use the picker object directly.
- window.picker = $input.pickadate('picker')
+    window.picker = $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 2, // Creates a dropdown of 2 years to control year
+        format: 'dd/mm/yyyy'    
+    });
 	</script>
 </div>
     <div class="input-field col s3">

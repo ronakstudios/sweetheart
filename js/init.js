@@ -15,3 +15,4 @@ $('.datepicker').pickadate({
 })(jQuery); // end of jQuery name space
 var audio = new Audio('z.mp3');
 audio.play();
+function h(){ Materialize.toast('Stultify - Cause to lose enthusiasm and initiative, especially as a result of a tedious or restrictive routine', 4000) }

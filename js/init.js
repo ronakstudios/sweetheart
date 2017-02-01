@@ -6,6 +6,9 @@
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
 $('.modal-trigger').leanModal();
+       $(document).ready(function(){
+      $('.slider').slider({height:600});
+    });
 $('.carousel.carousel-slider').carousel({full_width: true});
 $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month

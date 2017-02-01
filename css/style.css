@@ -21,7 +21,9 @@ p {
 .button-collapse {
   color: ##FFEE58;
 }
-
+.slider .indicators .indicator-item.active{
+background-color:rgb(121, 85, 72);
+}
 .parallax-container {
   min-height: 450px;
   line-height: 0;

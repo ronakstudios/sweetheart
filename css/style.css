@@ -37,6 +37,15 @@ ding h4 {
 background: rgb(93, 64, 55);
 
 }
+oneb {
+ background: rgb(255, 236, 179); 
+}
+twob {
+background: rgb(245, 245, 245);
+}
+threeb {
+background: rgb(215, 204, 200);
+}
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
